@@ -8,10 +8,13 @@ pile = []
 
 while len(p1) != 0 or len(p2) != 0:
 
-    if p1card == p1.pop[0]
-    p2card = p2.pop[0]
-    pile.apppend = (p1card)
-    pile.apppend = (p2card)
+    p1card == p1_deck.pop()
+    p2card == p2_deck.pop()
+
+    if p1card == p1.pop[0]:
+        p2card = p2.pop[0]
+        pile.apppend = (p1card)
+        pile.apppend = (p2card)
 
     print('player one has: ' + str(p1card) + '\nplayer two has: ' + str(p2card))
 
@@ -29,3 +32,8 @@ while len(p1) != 0 or len(p2) != 0:
         print('war')
         pile.append(p1.pop(0))
         pile.append(p2.pop(0))
+
+if len(p2_deck) < 0:
+    print('player two wins the game!!!!!!!!!!')
+else:
+    print('player one wins tho')
